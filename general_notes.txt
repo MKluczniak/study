@@ -1,0 +1,46 @@
+Podpiecie pliku z danymi do bazy danych, na przyklad w php moze być wykonane za pomoca:
+Include dbconnece.php lub require dbconnect.php różnica będzie taka ze require od razu wyzuci blad krytyczny jeśli nie znajdzie pliku a include tylko ostrzeżenie i reszta się wykona.
+
+Zapisywanie connection close juz na samym poczatku jest dobra praktyka zeby nie zapomniec 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DONT'S
+- Klasa w html nie moze byc liczbą
+
+
+GRAFIKE ORIENTUJEMY WOBEC PLIKU W KTORYM SIE ZNAJDUJEMY DLATEGO...
+"../img/image.png"  ".." wychodzimy z folderu a potem wchodzimy tam gdzie trzeb
+
+
+HTDOCS czyli hypertext documents 
+
+
+
+
+
+
+
+
+
+
+jest
+Math.floor(Math.random()*5)+1   //losujem liczbe od 1-5
+
+
+
+
+

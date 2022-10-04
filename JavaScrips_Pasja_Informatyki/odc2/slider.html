@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+<html>
+	<head>
+		<meta charset="utf-8" />
+		
+		<style>
+			body
+			{
+				background-color: #222222;
+				font-size: 24px;
+				color: white;
+			}
+		</style>
+
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script> <!-- powyzej skrypty bo musi juz przegladarka miec wsztsko zaincludowane-->
+
+<script type="text/javascript">
+
+    var number = Math.floor(Math.random()*5)+1; // to bedzie sobie zminna globalna gdyby byla wewnatz funkcji slajdy mogly by wyskoczys te same, matematyka :P
+    var timer1 = 0; 
+    var timer2 = 0;
+
+    function ustawslajd(numerslajdu)
+    {
+
+        clearTimeout(timer1);
+        clearTimeout(timer2);
+
+        number = numerslajdu -1; // bo ze zmiennej przychodzi numer a numery slajdow numerowane sa od zera obviously
+
+        schowaj();
+        setTimeout("zmienslajd()", 500)
+
+    }
+
+
+    function schowaj()
+    {
+        $("#slider").fadeOut(500);
+    }
+
+
+    function zmienslajd()
+    {
+        number++; if(number>5) number=1;  //pomyliles "=" z "=="!!!!!! dlatego slajd zawsze byl ten sam :P  
+
+        var plik = "<img src=\"slajdy/slajd" + number + ".png\" />"
+
+        document.getElementById("slider").innerHTML = plik;
+        $("#slider").fadeIn(500); 
+        
+        timer2 = setTimeout("schowaj()", 4500); 
+        timer1 = setTimeout("zmienslajd()", 5000);
+        
+    }
+</script>
+
+
+
+
+</head>
+
+
+<body onload="zmienslajd()">     <!-- // skoro cos ma sie zmieniac co 5 sekund to podepnimy to jako onload() -->
+
+    <span onclick="ustawslajd(1)" style="cursor:pointer;">[1]</span>
+    <span onclick="ustawslajd(2)" style="cursor:pointer;">[2]</span>
+    <span onclick="ustawslajd(3)" style="cursor:pointer;">[3]</span>
+    <span onclick="ustawslajd(4)" style="cursor:pointer;">[4]</span>
+    <span onclick="ustawslajd(5)" style="cursor:pointer;">[5]</span>
+
+
+    <div id="slider"></div>
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <script>
+// rozpoczynajac prace pomysl nad stowrzeniem planu co nasza funkcja/program ma zrobic
+        function check(){
+            var liczba = document.getElementById("pole").value;   //get element by id to uchwyt a watosc wewnatrz to value, albo getelementby id to funkcja ktora ma za zadanie dostac sie do wybranego elementu ;)
+            // a value to cecha albo wlasciwosc obiektu pole 
+            if (liczba>0) document.getElementById("wynik").innerHTML="dodatnia";
+            else if (liczba<0) document.getElementById("wynik").innerHTML="ujemna";
+            else if (liczba==0) document.getElementById("wynik").innerHTML="zero";
+            else document.getElementById("wynik").innerHTML="to nie jest liczba";
+        
+        }
+    
+    </script>
+
+
+</head>
+<body>
+ 
+    <!-- <div onload="check();"></div> -->
+    
+    <input type="text" id="pole"  />
+
+    <input type="submit" value="check" onclick="check()"/>
+
+    <div id="wynik"></div>
+
+</body>
+
+
+</html>

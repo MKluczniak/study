@@ -1,0 +1,24 @@
+divy defaultowo ukladaja sie jedem pod drugim
+
+uzycie div-containera i wysrodkowanie go sparawia ze kolejne divy beda sie przyklejaly do niego a nie do brzegow ekranu ponaddto, jest on podstawa estetyki i holitycznego formawania strony
+
+Pusty dive będzie nie widoczny bo bez zawartości będzie miał ustawione domyślnie wymiary na 0 :P
+
+
+margin: 0; w body sprawia ze domyślny 8px jest usunięty i container będzie normalnie zaczynał się od krawędzi 
+
+Nie dodanie do diva float:left sprawi ze ustawi się on pod ostatnim "normalnym divie, normalnym czyli takim który nie ma float:left. ustawia się normalnie" CZASEM MOZE SIE WIEC SCHOWAC POD INNYM DIVEM KTORY MA FLOATLeft!!!
+
+
+Chcąc niejako tylko wykasować ustawianie się divow obok sobie musimy stawić diva ze style=clear:both 
+Czasami bedzie to naturalne bo następny div będzie porostu footer i wtedy w nim będzie clear:both, ale czasami poprostu będziemy chcieli "zastopować" działanie floatlefta..  można oczywiście dodać także stworzyć osobna klasę w css np. ".Eraser{clear:both;}" jeśli będziemy używać jej czesciej
+
+
+
+1) Tworzenie siatki strony: W przypadku alternatywnej metody display:inline-block; pojawia się duży problem z usuwaniem znaków białych są oczywiście sposoby poradzenia sobie z tym, a az odbiera to smak życia więc na chwile obecna to oleje, znając tylko zarys funkcjonowania tej metody.  
+
+2) tworzenie buttonów: tutaj zastosowanie inline-block ma znacznie więcej sensu i buttony automatycznie ustawia się na środku pojawi się space pomiędzy nimi który wcześniej przy tworzeniu witryny z bloków był utrapieniem, no i będzie fajnie 
+
+UWAGA: na chwile obecna najprawdopowdbniej rozwiązaniem jest używanie FLEX boxa który dba o to żeby było fajnie ^^ to be learned soon 
+
+

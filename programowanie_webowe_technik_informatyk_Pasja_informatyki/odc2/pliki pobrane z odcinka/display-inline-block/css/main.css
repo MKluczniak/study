@@ -1,0 +1,63 @@
+body
+{
+	background-image: url(../img/tweed.png);    /* GRAFIKE ORIENTUJEMY WOBEC PLIKU W KTORYM SIE ZNAJDUJEMY DLATEGO...
+	"../img/image.png"  ".." wychodzimy z folderu a potem wchodzimy tam gdzie trzeb */
+
+	/* Background pattern from subtlepatterns.com */   /*podlinkowanie autora*/
+	margin: 0;
+	/* margin: 0; w body sprawia ze domyślny 8px jest usunięty i container będzie normalnie zaczynał się od krawędzi  */
+}
+
+.container
+{
+	background-color: white;
+	width: 900px;
+	height: 500px;
+	margin: auto;
+}
+
+.logo
+{
+	background-color: gray;
+	width: 900px;
+	height: 60px;
+}
+
+.menu
+{
+	background-color: black;
+	width: 900px;
+	height: 40px;
+}
+
+.nav
+{
+	background-color: coral;
+	width: 250px;
+	height: 300px;
+	display: inline-block;    
+	/* display: inline-block; jest alterantywa dla podejscia z uzyciem float:left */
+}
+
+.content
+{
+	background-color: skyblue;
+	width: 450px;
+	height: 300px;
+	display: inline-block; 
+}
+
+.sidebar
+{
+	background-color: teal;
+	width: 200px;
+	height: 300px;
+	display: inline-block;
+}
+
+.footer
+{
+	background-color: RebeccaPurple;
+	width: 900px;
+	height: 100px;
+}
