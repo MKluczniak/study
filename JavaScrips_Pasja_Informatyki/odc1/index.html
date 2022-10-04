@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang = "pl">
+<head>
+    <meta charset="utf-8"> 
+    <title> Odliczanie czasu</title>
+
+    <script type="text/javascript">
+
+        function countlivetime(){
+
+            var today = new Date(); //tworzymy obiekt klasy date
+            var day = today.getDate();
+            var month = today.getMonth()+1;
+            var year = today.getFullYear();
+            var hour = today.getHours(); 
+            if(hour<10) hour='0'+godzina;
+            var minute = today.getMinutes();
+            if(minute<10) minute="0"+minute;
+            var second = today.getSeconds();
+            if(second<10) second="0"+second;
+ 
+            document.getElementById("timer").innerHTML = day+"/"+month+"/"+year+"/"+hour+"/"+minute+"/"+second; //znajdz id zegar i podmien cokolwiek znajduje sie w srodku czyli miedzy tagami div na to co podam(za pomoca innerHTML)
+            // zrobiles 1. blad w innerHtml zamiast innerHTML, 2. napisales elemen czyli element bez "t" haha 
+
+            setTimeout("countlivetime()",1000) //ta funkcja ma tylko jedno zadanie wywolac inna funkcje po uplywie zadanego czasu
+            //1. wez pobierz czas z systemu, 2.wloz do 6 szufladek 3. podmien/odswierz innerHTML w divie 4. po sekundzie znowu zawolaj ta funkcje do pracy.
+
+            //stworzylismy perpetum mobile :p
+        }
+
+       
+    </script>
+</head>
+<body onload="countlivetime();">
+
+    <div id="timer">fdfasdfdas</div>
+
+    <!-- <script type="text/javascript">
+
+        countlivetime();
+    </script> -->
+
+</body> 
+</html>
+
+
+
+
+
+
