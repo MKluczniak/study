@@ -1,0 +1,58 @@
+body
+{
+    background-color: black;
+    color:lightgray;
+    font-size: 28px;
+}
+
+#pojemnik
+{
+   width: 900px;
+   margin-left: auto; 
+   margin-right: auto;
+}
+
+#plansza
+{
+	width: 900px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+	font-size: 48px;
+	min-height: 60px;
+}
+
+
+#szubienica{
+    float: left;
+    width: 450px;
+    text-align: center;
+    min-height: 280px; 
+    /* dodajemy min-height poniwaz w trakcie podmiany przez chwile moga byc puste co za tym idzie miec zerowa wysokosc  */
+}   
+
+#alfabet{
+    float: left;
+    width: 450px;
+    text-align: center;
+    min-height: 280px;
+
+}
+
+.litera
+{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    border: 3px solid gray;
+    float:left;
+}
+
+.litera:hover
+{
+	background-color: #222222;
+	color: white;
+	border: 3px solid white;
+} 

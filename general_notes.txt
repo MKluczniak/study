@@ -37,8 +37,10 @@ HTDOCS czyli hypertext documents
 
 
 
-jest
+JS
 Math.floor(Math.random()*5)+1   //losujem liczbe od 1-5
+
+konwersja stringa do tabliy -- funkcja split()
 
 
 
