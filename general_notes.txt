@@ -8,12 +8,12 @@ Zapisywanie connection close juz na samym poczatku jest dobra praktyka zeby nie 
 
 
 
+jQuery biblioteka narzedziowa
 
 
 
-
-
-
+$() to inaczej skrot wywolania funkcji jquery() (to glowna(globalna) funkcja w jquery)
+  
 
 
 

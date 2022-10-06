@@ -3,6 +3,8 @@ body
     background-color: black;
     color:lightgray;
     font-size: 28px;
+    font-family: 'Inconsolata';
+	font-weight: 700;
 }
 
 #pojemnik
@@ -48,6 +50,7 @@ body
     margin: 5px;
     border: 3px solid gray;
     float:left;
+    border-radius: 15%;
 }
 
 .litera:hover
@@ -55,4 +58,28 @@ body
 	background-color: #222222;
 	color: white;
 	border: 3px solid white;
-} 
+}
+
+.reset_gry
+{
+	color:green;
+	cursor: pointer;
+	font-size: 48px;
+}
+
+.reset_gry:hover
+{
+	color:white;
+}
+
+.midget
+{
+    color:blueviolet;
+    cursor: pointer;
+    font-size: 48px;
+}
+
+.midget:hover
+{
+	color:white;
+}
